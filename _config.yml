@@ -13,14 +13,14 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Ethereum Improvement Proposals
+title: Decentralized Climate Foundation
 description: >-
-  Ethereum Improvement Proposals (EIPs) describe standards for the Ethereum
+  Decentralized Climate Foundation (DCIPs) describe standards for the Decentralized Climate
   platform, including core protocol specifications, client APIs, and contract
   standards.
-url: "https://eips.ethereum.org"
-github_username:  ethereum
-repository: ethereum/EIPs
+url: "dcips.decentralizedclimate.org"
+github_username:  DECENTRALIZEDCLIMATE
+repository: DECENTRALIZEDCLIMATE/DCIPs
 
 header_pages:
  - all.html
@@ -48,9 +48,9 @@ permalink: /:slug
 defaults:
   -
     scope:
-      path: "EIPS"
+      path: "DCIPS"
     values:
-      layout: "eip"
+      layout: "dcip"
 
 exclude:
   - .github
