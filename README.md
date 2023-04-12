@@ -2,14 +2,14 @@
 
 The goal of the EIP project is to standardize and provide high-quality documentation for Ethereum itself and conventions built upon it. This repository tracks past and ongoing improvements to Ethereum in the form of Ethereum Improvement Proposals (EIPs). [EIP-1](https://eips.ethereum.org/EIPS/eip-1) governs how EIPs are published.
 
-The [status page](https://eips.ethereum.org/) tracks and lists EIPs, which can be divided into the following categories:
+The [status page](https://dcips.decentralizedclimate.org/) tracks and lists EIPs, which can be divided into the following categories:
 
-- [Core EIPs](https://eips.ethereum.org/core) are improvements to the Ethereum consensus protocol.
-- [Networking EIPs](https://eips.ethereum.org/networking) specify the peer-to-peer networking layer of Ethereum.
-- [Interface EIPs](https://eips.ethereum.org/interface) standardize interfaces to Ethereum, which determine how users and applications interact with the blockchain.
-- [ERCs](https://eips.ethereum.org/erc) specify application layer standards, which determine how applications running on Ethereum can interact with each other.
-- [Meta EIPs](https://eips.ethereum.org/meta) are miscellaneous improvements that nonetheless require some sort of consensus.
-- [Informational EIPs](https://eips.ethereum.org/informational) are non-standard improvements that do not require any form of consensus.
+- [Core EIPs](https://dcips.decentralizedclimate.org/core) are improvements to the Ethereum consensus protocol.
+- [Networking EIPs](https://dcips.decentralizedclimate.org/networking) specify the peer-to-peer networking layer of Ethereum.
+- [Interface EIPs](https://dcips.decentralizedclimate.org/interface) standardize interfaces to Ethereum, which determine how users and applications interact with the blockchain.
+- [ERCs](https://dcips.decentralizedclimate.org/erc) specify application layer standards, which determine how applications running on Ethereum can interact with each other.
+- [Meta EIPs](https://dcips.decentralizedclimate.org/meta) are miscellaneous improvements that nonetheless require some sort of consensus.
+- [Informational EIPs](https://eips.decentralizedclimate.org/informational) are non-standard improvements that do not require any form of consensus.
 
 **Before you write an EIP, ideas MUST be thoroughly discussed on [Ethereum Magicians](https://ethereum-magicians.org/) or [Ethereum Research](https://ethresear.ch/t/read-this-before-posting/8). Once consensus is reached, thoroughly read and review [EIP-1](https://eips.ethereum.org/EIPS/eip-1), which describes the EIP process.**
 
