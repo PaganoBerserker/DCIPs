@@ -1,11 +1,9 @@
 ---
 eip: 1
-title: General Assembly No. 2 (Unfinished)
-author: Decentralized Climate (@DecentralizedClimate)
+title: DCIP-1(unfinished) DCIP Purpose and Guidelines
+author: Omar Octavio Huerta Valdez (@bleeckersteker)
 status: Living
 type: Standards Track
 category: Core
-created: 2023-01-02
----
-
-
+created:
+--- 
