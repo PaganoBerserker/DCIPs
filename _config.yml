@@ -27,7 +27,7 @@ header_pages:
  - core.html
  - networking.html
  - interface.html
- - erc.html
+# - erc.html
  - meta.html
  - informational.html
 
@@ -37,7 +37,7 @@ markdown: kramdown
 theme: minima
 kramdown:
   parse_block_html: false
-  # This is the default, but be explicit as some EIPs depend on it
+  # This is the default, but be explicit as some DCIPs depend on it
   auto_ids: true
   # This is to ensure more determistic behaviour
   auto_id_stripping: true
@@ -48,7 +48,7 @@ permalink: /:slug
 defaults:
   -
     scope:
-      path: "DCIPS"
+      path: "DCIPs"
     values:
       layout: "dcip"
 
@@ -61,7 +61,7 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
-  - eip-template.md
+  - dcip-template.md
   - ISSUE_TEMPLATE.md
   - PULL_REQUEST_TEMPLATE.md
   - README.md

@@ -1,6 +1,6 @@
 # Decentralized Climate Improvement Proposals (DCIPs)
 
-The goal of the DCIP project is to standardize and provide high-quality documentation for Decentralized Climate itself and conventions built upon it. This repository tracks past and ongoing improvements to Decentralized Climate in the form of Decentralized Climate Improvement Proposals (DCIPs). [DCIP-1](dcips.decentralizedclimate.org/EIPS/dcip-1) governs how DCIPs are published.
+The goal of the DCIP project is to standardize and provide high-quality documentation for Decentralized Climate itself and conventions built upon it. This repository tracks past and ongoing improvements to Decentralized Climate in the form of Decentralized Climate Improvement Proposals (DCIPs). [DCIP-1](dcips.decentralizedclimate.org/DCIPS/dcip-1) governs how DCIPs are published.
 
 The [status page](https://dcips.decentralizedclimate.org/) tracks and lists DCIPs, which can be divided into the following categories:
 
@@ -9,39 +9,39 @@ The [status page](https://dcips.decentralizedclimate.org/) tracks and lists DCIP
 - [Interface DCIPs](https://dcips.decentralizedclimate.org/interface) standardize interfaces to Decentralized Climate, which determine how users and applications interact with the blockchain.
 - [ERCs](https://dcips.decentralizedclimate.org/erc) specify application layer standards, which determine how applications running on Decentralized Climate can interact with each other.
 - [Meta DCIPs](https://dcips.decentralizedclimate.org/meta) are miscellaneous improvements that nonetheless require some sort of consensus.
-- [Informational DCIPs](https://eips.decentralizedclimate.org/informational) are non-standard improvements that do not require any form of consensus.
+- [Informational DCIPs](https://dcips.decentralizedclimate.org/informational) are non-standard improvements that do not require any form of consensus.
 
-**Before you write an DCIP, ideas MUST be thoroughly discussed on [Decentralized Climate Magicians](https://ethereum-magicians.org/) or [Decentralized Climate Research](https://ethresear.ch/t/read-this-before-posting/8). Once consensus is reached, thoroughly read and review [EIP-1](https://eips.ethereum.org/EIPS/eip-1), which describes the EIP process.**
+**Before you write an DCIP, ideas MUST be thoroughly discussed on [Decentralized Climate Magicians](https://ethereum-magicians.org/) or [Decentralized Climate Research](https://ethresear.ch/t/read-this-before-posting/8). Once consensus is reached, thoroughly read and review [DCIP-1](https://dcips.ethereum.org/DCIPS/dcip-1), which describes the DCIP process.**
 
-Please note that this repository is for documenting standards and not for help implementing them. These types of inquiries should be directed to the [Decentralized Climate Stack Exchange](https://ethereum.stackexchange.com). For specific questions and concerns regarding EIPs, it's best to comment on the relevant discussion thread of the EIP denoted by the `discussions-to` tag in the EIP's preamble.
+Please note that this repository is for documenting standards and not for help implementing them. These types of inquiries should be directed to the [Decentralized Climate Stack Exchange](https://ethereum.stackexchange.com). For specific questions and concerns regarding DCIPs, it's best to comment on the relevant discussion thread of the DCIP denoted by the `discussions-to` tag in the DCIP's preamble.
 
-If you would like to become an EIP Editor, please read [EIP-5069](./EIPS/eip-5069.md).
+If you would like to become an DCIP Editor, please read [DCIP-5069](./DCIPS/dcip-5069.md).
 
 ## Preferred Citation Format
 
-The canonical URL for an EIP that has achieved draft status at any point is at <https://eips.ethereum.org/>. For example, the canonical URL for EIP-1 is <https://eips.ethereum.org/EIPS/eip-1>.
+The canonical URL for an DCIP that has achieved draft status at any point is at <https://dcips.ethereum.org/>. For example, the canonical URL for DCIP-1 is <https://dcips.ethereum.org/DCIPS/dcip-1>.
 
-Consider any document not published at <https://eips.ethereum.org/> as a working paper. Additionally, consider published EIPs with a status of "draft", "review", or "last call" to be incomplete drafts, and note that their specification is likely to be subject to change.
+Consider any document not published at <https://dcips.ethereum.org/> as a working paper. Additionally, consider published DCIPs with a status of "draft", "review", or "last call" to be incomplete drafts, and note that their specification is likely to be subject to change.
 
 ## Validation and Automerging
 
 All pull requests in this repository must pass automated checks before they can be automatically merged:
 
-- [eip-review-bot](https://github.com/ethereum/eip-review-bot/) determines when PRs can be automatically merged [^1]
-- DCIP-1 rules are enforced using [`eipw`](https://github.com/ethereum/eipw)[^2]
+- [dcip-review-bot](https://github.com/ethereum/dcip-review-bot/) determines when PRs can be automatically merged [^1]
+- DCIP-1 rules are enforced using [`dcipw`](https://github.com/ethereum/dcipw)[^2]
 - HTML formatting and broken links are enforced using [HTMLProofer](https://github.com/gjtorikian/html-proofer)[^2]
 - Spelling is enforced with [CodeSpell](https://github.com/codespell-project/codespell)[^2]
-  - False positives sometimes occur. When this happens, please submit a PR editing [.codespell-whitelist](https://github.com/ethereum/EIPs/blob/master/config/.codespell-whitelist) and **ONLY** .codespell-whitelist
+  - False positives sometimes occur. When this happens, please submit a PR editing [.codespell-whitelist](https://github.com/ethereum/DCIPs/blob/master/config/.codespell-whitelist) and **ONLY** .codespell-whitelist
 - Markdown best practices are checked using [markdownlint](https://github.com/DavidAnson/markdownlint)[^2]
 
-[^1]: https://github.com/ethereum/EIPs/blob/master/.github/workflows/auto-review-bot.yml
-[^2]: https://github.com/ethereum/EIPs/blob/master/.github/workflows/ci.yml
+[^1]: https://github.com/ethereum/DCIPs/blob/master/.github/workflows/auto-review-bot.yml
+[^2]: https://github.com/ethereum/DCIPs/blob/master/.github/workflows/ci.yml
 
 It is possible to run the DCIP validator locally:
 
 ```sh
-cargo install eipv
-eipv <INPUT FILE / DIRECTORY>
+cargo install dcipv
+dcipv <INPUT FILE / DIRECTORY>
 ```
 
 ## Build the status page locally
