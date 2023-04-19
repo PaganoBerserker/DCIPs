@@ -49,8 +49,6 @@ permalink: /:slug
 collections:
   dcif:
     output: true
-    permalink: /:collection/:path/
-
 
 defaults:
   -
