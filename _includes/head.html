@@ -2,22 +2,22 @@
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  {% if page.layout == "dcip" %}
-    {% if page.category == "ERC" %}
-      <title>ERC-{{ page.dcip }}: {{ page.title | escape }}</title>
+  {% if post.layout == "dcip" %}
+    {% if post.category == "ERC" %}
+      <title>ERC-{{ post.dcip }}: {{ post.title | escape }}</title>
       <meta propery="og:title" content="ERC-{{ page.dcip }}: {{ page.title | escape }}" />
     {% else %}
-      <title>DCIP-{{ page.dcip }}: {{ page.title | escape }}</title>
+      <title>DCIP-{{ post.dcip }}: {{ post.title | escape }}</title>
       <meta property="og:title" content="DCIP-{{ page.dcip }}: {{ page.title | escape }}" />
     {% endif %}
     <meta name="description" content="{{page.description | escape }}" />
     <meta property="og:description" content="{{page.description | escape }}" />
     <meta name="twitter:description" content="{{page.description | escape }}" />
   {% else %}
-  <title>{{ page.title | escape }} | {{site.title}}</title>
+  <title>{{ post.title | escape }} | {{site.title}}</title>
     <meta
       property="og:title"
-      content="{{ page.title | escape }} | {{site.title}}"
+      content="{{ post.title | escape }} | {{site.title}}"
     />
     <meta name="description" content="{{site.description}}" />
     <meta property="og:description" content="{{site.description}}" />
