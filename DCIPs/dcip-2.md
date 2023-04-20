@@ -6,6 +6,7 @@ type: Standards Track
 category: Core
 status: Final
 created: 2023-02-01
+layout: post
 ---
 
 ## Simple Summary
