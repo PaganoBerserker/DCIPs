@@ -2,9 +2,9 @@
 dcip: 2
 title: DCIP-2 Meetings
 author: David E. Perez Negron R. (@P1R)
+status: Final
 type: Standards Track
 category: Core
-status: Final
 created: 2023-02-01
 layout: post
 ---
