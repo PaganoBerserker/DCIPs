@@ -47,8 +47,9 @@ permalink: /:slug
 
 
 collections:
-  dcif:
+  dcip:
     output: true
+
 
 defaults:
   -
