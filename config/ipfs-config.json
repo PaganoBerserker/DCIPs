@@ -1,0 +1,24 @@
+{
+	
+  "public": true,
+  "files": [
+	  {
+	  "path": "/home/team1/DCIPs/DCIPs/dcip-1.md",
+	  "cid": "",
+	  "contentType": "text/markdown"
+	  },
+          {
+          "path": "/home/team1/DCIPs/DCIPs/dcip-2.md",
+          "cid": "",
+	  "contentType": "text/markdown"
+           },
+	   {
+          "path": "/home/team1/DCIPs/DCIPs/dcip-3.md",
+												                "cid": "",
+												                "contentType": "text/markdown"
+													        }
+											
+       ]
+												
+  }
+
