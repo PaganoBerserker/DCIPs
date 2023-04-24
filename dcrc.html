@@ -1,0 +1,7 @@
+---
+layout: page
+title: DCRC
+---
+
+{% assign dcips=site.pages|where:"type","Standards Track"|where:"category","DCRC" %}
+{% include dciptable.html dcips=dcips %}
