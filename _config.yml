@@ -27,7 +27,7 @@ header_pages:
  - core.html
  - networking.html
  - interface.html
-# - erc.html
+# - dcrc.html
  - meta.html
  - informational.html
 
