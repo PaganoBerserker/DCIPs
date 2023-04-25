@@ -5,13 +5,13 @@ author: <a comma separated list of the author's or authors' name + GitHub userna
 discussions-to: <URL>
 status: Draft
 type: <Standards Track, Meta, or Informational>
-category: <Core, Networking, Interface, or ERC> # Only required for Standards Track. Otherwise, remove this field.
+category: <Core, Networking or Interface> # Only required for Standards Track. Otherwise, remove this field.
 created: <date created on, in ISO 8601 (yyyy-mm-dd) format>
 requires: <DCIP number(s)> # Only required when you reference an DCIP in the `Specification` section. Otherwise, remove this field.
 ---
 
 <!--
-  READ DCIP-1 (https://dev.dcips.decentralizedclimate.org/DCIPS/dcip-1) BEFORE USING THIS TEMPLATE!
+  READ DCIP-1 (https://dcips.decentralizedclimate.org/DCIPS/dcip-1) BEFORE USING THIS TEMPLATE!
 
   This is the suggested template for new DCIPs. After you have filled in the requisite fields, please delete these comments.
 
@@ -45,7 +45,7 @@ requires: <DCIP number(s)> # Only required when you reference an DCIP in the `Sp
 ## Specification
 
 <!--
-  The Specification section should describe the syntax and semantics of any new feature. The specification should be detailed enough to allow competing, interoperable implementations for any of the current Ethereum platforms (besu, erigon, ethereumjs, go-ethereum, nethermind, or others).
+  The Specification section should describe the syntax and semantics of any new feature. The specification should be detailed enough to allow competing, interoperable implementations for any of the current Decentralized Climate platforms.
 
   It is recommended to follow RFC 2119 and RFC 8170. Do not remove the key word definitions if RFC 2119 and RFC 8170 are followed.
 

@@ -38,9 +38,9 @@ layout: default
     {% elsif page.category == "Core" %}
       <a class="badge text-light bg-primary" data-bs-toggle="tooltip" data-bs-title="Improvements requiring a consensus fork, as well as changes that are not necessarily consensus critical but may be relevant to “core dev” discussions." href="../core">Standards Track: Core</a>
     {% elsif page.type == "Informational" %}
-      <a class="badge text-light bg-primary" data-bs-toggle="tooltip" data-bs-title="Describes an Ethereum design issue, or provides general guidelines or information to the Decentralized Climate community, but does not propose a new feature. Informational DCIPs do not necessarily represent Decentralized Climate community consensus or a recommendation, so users and implementers are free to ignore Informational DCIPs or follow their advice." href="../informational">Informational</a>
+      <a class="badge text-light bg-primary" data-bs-toggle="tooltip" data-bs-title="Describes an Decentralized Foundation design issue, or provides general guidelines or information to the Decentralized Climate community, but does not propose a new feature. Informational DCIPs do not necessarily represent Decentralized Climate community consensus or a recommendation, so users and implementers are free to ignore Informational DCIPs or follow their advice." href="../informational">Informational</a>
     {% elsif page.type == "Meta" %}
-      <a class="badge text-light bg-primary" data-bs-toggle="tooltip" data-bs-title="Describes a process surrounding Ethereum or proposes a change to (or an event in) a process. " href="../meta">Meta</a>
+      <a class="badge text-light bg-primary" data-bs-toggle="tooltip" data-bs-title="Describes a process surrounding Decentralized Foundation or proposes a change to (or an event in) a process. " href="../meta">Meta</a>
     {% endif %}
   </span>
   <h1 class="page-heading">
@@ -114,7 +114,7 @@ layout: default
   IEEE specification for reference formatting:
   https://ieee-dataport.org/sites/default/files/analysis/27/IEEE%20Citation%20Guidelines.pdf
   {% endcomment %}
-  <p>{% include authorlist.html authors=page.author %}, "{% if page.category == "{% else %}DCIP{% endif %}-{{ page.dcip | xml_escape }}: {{ page.title | xml_escape }}{% if page.status == "Draft" or page.status == "Stagnant" or page.status == "Withdrawn" or page.status == "Review" or page.status == "Last Call" %} [DRAFT]{% endif %}," <em>Decentralized Climate Foundation</em>, no. {{ page.dcip | xml_escape }}, {{ page.created | date: "%B %Y" }}. [Online serial]. Available: https://dev.dcips.decentralizedclimate.org/DCIPS/dcip-{{ page.dcip | xml_escape }}.</p>
+  <p>{% include authorlist.html authors=page.author %}, "{% if page.category == "{% else %}DCIP{% endif %}-{{ page.dcip | xml_escape }}: {{ page.title | xml_escape }}{% if page.status == "Draft" or page.status == "Stagnant" or page.status == "Withdrawn" or page.status == "Review" or page.status == "Last Call" %} [DRAFT]{% endif %}," <em>Decentralized Climate Foundation</em>, no. {{ page.dcip | xml_escape }}, {{ page.created | date: "%B %Y" }}. [Online serial]. Available: https://dcips.decentralizedclimate.org/DCIPS/dcip-{{ page.dcip | xml_escape }}.</p>
 </div>
 {% comment %}
 Article schema specification:
