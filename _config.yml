@@ -18,7 +18,7 @@ description: >-
   Decentralized Climate Foundation (DCIPs) describe standards for the Decentralized Climate
   platform, including core protocol specifications, client APIs, and contract
   standards.
-url: "dev.dcips.decentralizedclimate.org/"
+url: "dcips.decentralizedclimate.org/"
 github_username:  DECENTRALIZEDCLIMATE
 repository: DECENTRALIZEDCLIMATE/DCIPs
 
@@ -27,7 +27,6 @@ header_pages:
  - core.html
  - networking.html
  - interface.html
-# - dcrc.html
  - meta.html
  - informational.html
 
