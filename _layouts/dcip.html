@@ -31,24 +31,19 @@ layout: default
     {% if page.status == "Last Call" %}
       <span class="badge text-light bg-success" data-bs-toggle="tooltip" data-bs-title="This DCIP is in the last call for review stage. The authors wish to finalize the DCIP and ask you to provide feedback.">📢 Last Call</span>
     {% endif %}
-    {% if page.category == "DCRC" %}
-      <a class="badge text-light bg-primary" data-bs-toggle="tooltip" data-bs-title="Application-level standards and conventions, including contract standards such as token standards, name registries, URI schemes, library/package formats, and wallet formats." href="../dcrc">Standards Track: DCRC</a>
     {% elsif page.category == "Interface" %}
       <a class="badge text-light bg-primary" data-bs-toggle="tooltip" data-bs-title="Improvements around client API/RPC specifications and standards, and also certain language-level standards like method names and contract ABIs." href="../interface">Standards Track: Interface</a>
     {% elsif page.category == "Networking" %}
-      <a class="badge text-light bg-primary" data-bs-toggle="tooltip" data-bs-title="Improvements around devp2p and Light Ethereum Subprotocol, as well as proposed improvements to network protocol specifications of whisper and swarm." href="../networking">Standards Track: Networking</a>
+      <a class="badge text-light bg-primary" data-bs-toggle="tooltip" data-bs-title="Improvements around devp2p and Light Decentralized Climate Subprotocol, as well as proposed improvements to network protocol specifications of whisper and swarm." href="../networking">Standards Track: Networking</a>
     {% elsif page.category == "Core" %}
       <a class="badge text-light bg-primary" data-bs-toggle="tooltip" data-bs-title="Improvements requiring a consensus fork, as well as changes that are not necessarily consensus critical but may be relevant to “core dev” discussions." href="../core">Standards Track: Core</a>
     {% elsif page.type == "Informational" %}
-      <a class="badge text-light bg-primary" data-bs-toggle="tooltip" data-bs-title="Describes an Ethereum design issue, or provides general guidelines or information to the Ethereum community, but does not propose a new feature. Informational DCIPs do not necessarily represent Ethereum community consensus or a recommendation, so users and implementers are free to ignore Informational DCIPs or follow their advice." href="../informational">Informational</a>
+      <a class="badge text-light bg-primary" data-bs-toggle="tooltip" data-bs-title="Describes an Ethereum design issue, or provides general guidelines or information to the Decentralized Climate community, but does not propose a new feature. Informational DCIPs do not necessarily represent Decentralized Climate community consensus or a recommendation, so users and implementers are free to ignore Informational DCIPs or follow their advice." href="../informational">Informational</a>
     {% elsif page.type == "Meta" %}
       <a class="badge text-light bg-primary" data-bs-toggle="tooltip" data-bs-title="Describes a process surrounding Ethereum or proposes a change to (or an event in) a process. " href="../meta">Meta</a>
     {% endif %}
   </span>
   <h1 class="page-heading">
-    {% if page.category == "DCRC" %}
-      DCRC-{{ page.dcip | xml_escape }}: {{ page.title | xml_escape }}
-    {% elsif page.category != "DCRC" %}
       DCIP-{{ page.dcip | xml_escape }}: {{ page.title | xml_escape }}
     {% endif %}
     <a href="{{ page.discussions-to | uri_escape }}" class="no-underline">
@@ -119,7 +114,7 @@ layout: default
   IEEE specification for reference formatting:
   https://ieee-dataport.org/sites/default/files/analysis/27/IEEE%20Citation%20Guidelines.pdf
   {% endcomment %}
-  <p>{% include authorlist.html authors=page.author %}, "{% if page.category == "DCRC" %}DCRC{% else %}DCIP{% endif %}-{{ page.dcip | xml_escape }}: {{ page.title | xml_escape }}{% if page.status == "Draft" or page.status == "Stagnant" or page.status == "Withdrawn" or page.status == "Review" or page.status == "Last Call" %} [DRAFT]{% endif %}," <em>Decentralized Climate Foundation</em>, no. {{ page.dcip | xml_escape }}, {{ page.created | date: "%B %Y" }}. [Online serial]. Available: https://dev.dcips.decentralizedclimate.org/DCIPS/dcip-{{ page.dcip | xml_escape }}.</p>
+  <p>{% include authorlist.html authors=page.author %}, "{% if page.category == "{% else %}DCIP{% endif %}-{{ page.dcip | xml_escape }}: {{ page.title | xml_escape }}{% if page.status == "Draft" or page.status == "Stagnant" or page.status == "Withdrawn" or page.status == "Review" or page.status == "Last Call" %} [DRAFT]{% endif %}," <em>Decentralized Climate Foundation</em>, no. {{ page.dcip | xml_escape }}, {{ page.created | date: "%B %Y" }}. [Online serial]. Available: https://dev.dcips.decentralizedclimate.org/DCIPS/dcip-{{ page.dcip | xml_escape }}.</p>
 </div>
 {% comment %}
 Article schema specification:
@@ -129,10 +124,6 @@ https://schema.org/TechArticle
   {
     "@context": "http://schema.org",
     "@type": "TechArticle",
-    {% if page.category == "DCRC" %}
-    "headline": "DCRC-{{ page.dcip | xml_escape }}: {{ page.title | xml_escape }}{% if page.status == "Draft" or page.status == "Stagnant" or page.status == "Withdrawn" or page.status == "Review" or page.status == "Last Call" %} [DRAFT]{% endif %}",
-    "name": "DCRC-{{ page.dcip | xml_escape }}: {{ page.title | xml_escape }}{% if page.status == "Draft" or page.status == "Stagnant" or page.status == "Withdrawn" or page.status == "Review" or page.status == "Last Call" %} [DRAFT]{% endif %}",
-    {% else %}
     "headline": "DCIP-{{ page.dcip | xml_escape }}: {{ page.title | xml_escape }}{% if page.status == "Draft" or page.status == "Stagnant" or page.status == "Withdrawn" or page.status == "Review" or page.status == "Last Call" %} [DRAFT]{% endif %}",
     "name": "DCIP-{{ page.dcip | xml_escape }}: {{ page.title | xml_escape }}{% if page.status == "Draft" or page.status == "Stagnant" or page.status == "Withdrawn" or page.status == "Review" or page.status == "Last Call" %} [DRAFT]{% endif %}",
     {% endif %}

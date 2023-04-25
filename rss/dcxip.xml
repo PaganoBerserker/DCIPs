@@ -5,13 +5,13 @@ layout: null
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Decentralized Climate DCIPs</title>
-    <description>All updates for DCRCs</description>
+    <description>All updates for DCIPs</description>
     <link>{{ site.url }}</link>
     <atom:link href="{{ site.url }}/rss/dcrc.xml" rel="self" type="application/rss+xml" />
     <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
     {% assign dcips = site.pages | sort: 'dcip' %}
     {% for dcip in dcips %}
-      {% if dcip.category == "DCRC" %}
+      {% if dcip.category == "DCIP" %}
       {% capture description %}
         <p><strong>DCIP #{{ dcip.dcip }} - {{dcip.title }}</strong> is in the {{ dcip.category }} category of type {{ dcip.type }} and was just updated.</p>
         {% if dcip.discussions-to %}

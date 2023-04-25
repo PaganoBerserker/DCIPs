@@ -11,7 +11,7 @@ layout: null
     <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
     {% assign dcips = site.pages | sort: 'dcip' %}
     {% for dcip in dcips %}
-      {% unless dcip.category == "DCRC" %}
+      {% unless dcip.category == "DCIP" %}
       {% if dcip.status == "Last Call" %}
       {% capture description %}
         <p><strong>DCIP #{{ dcip.dcip }} - {{dcip.title }}</strong> is in Last Call status. It is authored by {{ dcip.author }} and was originally created {{ dcip.created }}. It is in the {{ dcip.category }} category of type {{ dcip.type }}. Please review and note any changes that should block acceptance.</p>

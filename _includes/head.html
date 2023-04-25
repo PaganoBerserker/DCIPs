@@ -2,11 +2,8 @@
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  {% if post.layout == "dcip" %}
-    {% if post.category == "DCRC" %}
-      <title>DCRC-{{ page.dcip }}: {{ page.title | escape }}</title>
-      <meta propery="og:title" content="DCRC-{{ page.dcip }}: {{ page.title | escape }}" />
-    {% else %}
+  {% if page.layout == "dcip" %}
+    {% if page.category == "DCIP" %} 
       <title>DCIP-{{ page.dcip }}: {{ page.title | escape }}</title>
       <meta property="og:title" content="DCIP-{{ page.dcip }}: {{ page.title | escape }}" />
     {% endif %}
