@@ -13,21 +13,20 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Ethereum Improvement Proposals
+title: Decentralized Climate Foundation
 description: >-
-  Ethereum Improvement Proposals (EIPs) describe standards for the Ethereum
+  Decentralized Climate Foundation (DCIPs) describe standards for the Decentralized Climate
   platform, including core protocol specifications, client APIs, and contract
   standards.
-url: "https://eips.ethereum.org"
-github_username:  ethereum
-repository: ethereum/EIPs
+url: "dcips.decentralizedclimate.org/"
+github_username:  DECENTRALIZEDCLIMATE
+repository: DECENTRALIZEDCLIMATE/DCIPs
 
 header_pages:
  - all.html
  - core.html
  - networking.html
  - interface.html
- - erc.html
  - meta.html
  - informational.html
 
@@ -37,7 +36,7 @@ markdown: kramdown
 theme: minima
 kramdown:
   parse_block_html: false
-  # This is the default, but be explicit as some EIPs depend on it
+  # This is the default, but be explicit as some DCIPs depend on it
   auto_ids: true
   # This is to ensure more determistic behaviour
   auto_id_stripping: true
@@ -45,12 +44,18 @@ kramdown:
 
 permalink: /:slug
 
+
+collections:
+  dcip:
+    output: true
+
+
 defaults:
   -
     scope:
-      path: "EIPS"
+      path: "DCIPs"
     values:
-      layout: "eip"
+      layout: "dcip"
 
 exclude:
   - .github
@@ -61,7 +66,7 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
-  - eip-template.md
+  - dcip-template.md
   - ISSUE_TEMPLATE.md
   - PULL_REQUEST_TEMPLATE.md
   - README.md

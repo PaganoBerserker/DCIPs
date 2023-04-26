@@ -2,13 +2,10 @@
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  {% if page.layout == "eip" %}
-    {% if page.category == "ERC" %}
-      <title>ERC-{{ page.eip }}: {{ page.title | escape }}</title>
-      <meta propery="og:title" content="ERC-{{ page.eip }}: {{ page.title | escape }}" />
-    {% else %}
-      <title>EIP-{{ page.eip }}: {{ page.title | escape }}</title>
-      <meta property="og:title" content="EIP-{{ page.eip }}: {{ page.title | escape }}" />
+  {% if page.layout == "dcip" %}
+    {% if page.category == "DCIP" %} 
+      <title>DCIP-{{ page.dcip }}: {{ page.title | escape }}</title>
+      <meta property="og:title" content="DCIP-{{ page.dcip }}: {{ page.title | escape }}" />
     {% endif %}
     <meta name="description" content="{{page.description | escape }}" />
     <meta property="og:description" content="{{page.description | escape }}" />

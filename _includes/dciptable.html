@@ -1,0 +1,36 @@
+<style type="text/css">
+  .dciptable .title {
+    width: 67%;
+  }
+
+  .dciptable .author {
+    width: 33%;
+  }
+</style>
+{% for status in site.data.statuses %}
+  {% assign dcips = include.dcips|where:"status",status|sort:"dcip" %}
+  {% assign count = dcips|size %}
+  {% if count > 0 %}
+    <h2 id="{{status|slugify}}">{{status}}</h2>
+    <table class="dciptable">
+      <thead>
+        {% if status == "Last Call" %}
+          <tr>
+          <th class="dcipnum">Number</th><th class="date">Review ends</th><th class="title">Title</th><th class="author">Author</th></tr>
+        {% else %}
+          <tr><th class="dcipnum">Number</th><th class="title">Title</th><th class="author">Author</th></tr>
+        {% endif %}
+      </thead>
+      {% for page in dcips %}
+        <tr>
+          <td class="dcipnum"><a href="{{page.url|relative_url}}">{{page.dcip|xml_escape}}</a></td>
+          {% if status == "Last Call" and page.last-call-deadline != undefined %}
+            <td class="date">{{ page.last-call-deadline | xml_escape }}</td>
+          {% endif %}
+          <td class="title">{{page.title|xml_escape}}</td>
+          <td class="author">{% include authorlist.html authors=page.author %}</td>
+        </tr>
+      {% endfor %}
+    </table>
+  {% endif %}
+{% endfor %}
