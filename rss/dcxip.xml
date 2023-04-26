@@ -4,16 +4,16 @@ layout: null
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Decentralized Climate DCIPs - Last Call Review</title>
-    <description>All DCIPs which are in the two-week "last call" status, please help review these and provide your feedback!</description>
+    <title>Decentralized Climate DCIPs</title>
+    <description>All updates for DCIPs</description>
     <link>{{ site.url }}</link>
-    <atom:link href="{{ site.url }}/rss/last-call.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="{{ site.url }}/rss/dcrc.xml" rel="self" type="application/rss+xml" />
     <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
     {% assign dcips = site.pages | sort: 'dcip' %}
     {% for dcip in dcips %}
-      {% if dcip.status == "Last Call" %}
+      {% if dcip.category == "DCIP" %}
       {% capture description %}
-        <p><strong>DCIP #{{ dcip.dcip }} - {{dcip.title }}</strong> is in Last Call status. It is authored by {{ dcip.author }} and was originally created {{ dcip.created }}. It is in the {{ dcip.category }} category of type {{ dcip.type }}. Please review and note any changes that should block acceptance.</p>
+        <p><strong>DCIP #{{ dcip.dcip }} - {{dcip.title }}</strong> is in the {{ dcip.category }} category of type {{ dcip.type }} and was just updated.</p>
         {% if dcip.discussions-to %}
           <p>The author has requested that discussions happen at the following URL: <a href="{{ dcip.discussions-to }}">{{ dcip.discussions-to }}</a></p>
         {% endif %}

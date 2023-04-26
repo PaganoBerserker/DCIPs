@@ -1,0 +1,4 @@
+{% assign dcips=include.dcips|split:"," %}
+{% for dcipnum in dcips %}
+  <a href="{{dcipnum|strip|prepend:"dcip-" }}">DCIP-{{dcipnum|strip}}</a>{% if forloop.last == false %}, {% endif %}
+{% endfor %}
