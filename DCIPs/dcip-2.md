@@ -7,6 +7,7 @@ type: Standards Track
 category: Core
 created: 2023-02-01
 layout: post
+usemathjax: true
 ---
 
 ## Simple Summary
