@@ -30,5 +30,8 @@ gem "webrick"
 
 gem "rexml"
 
-gem "kramdown", ">=1.3" 
+gem "kramdown", ">=1.3"
+
+gem "faraday-retry"
+
 #gem "kramdown-parser-gfm"

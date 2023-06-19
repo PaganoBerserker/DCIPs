@@ -35,6 +35,8 @@ GEM
       faraday-net_http (>= 2.0, < 3.1)
       ruby2_keywords (>= 0.0.4)
     faraday-net_http (3.0.2)
+    faraday-retry (2.2.0)
+      faraday (~> 2.0)
     ffi (1.15.5)
     forwardable-extended (2.6.0)
     front_matter_parser (0.1.1)
@@ -270,6 +272,7 @@ PLATFORMS
 
 DEPENDENCIES
   eip_validator (>= 0.8.2)
+  faraday-retry
   github-pages (= 206)
   html-proofer (>= 3.3.1)
   jekyll-feed (~> 0.11)
@@ -280,4 +283,4 @@ DEPENDENCIES
   webrick
 
 BUNDLED WITH
-   2.4.9
+   2.4.8
