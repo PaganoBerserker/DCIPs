@@ -1,4 +1,5 @@
 ---
+
 dcip: 2
 title: DCIP-2 Meetings
 author: David E. Perez Negron R. (@P1R)
@@ -8,7 +9,10 @@ category: Core
 created: 2023-02-01
 layout: post
 usemathjax: true
+
 ---
+
+
 
 ## Simple Summary
 
