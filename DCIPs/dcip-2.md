@@ -10,6 +10,7 @@ created: 2023-02-01
 layout: post
 usemathjax: true
 usemath: true
+mathjax: true
 
 ---
 
